@@ -1,0 +1,264 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+/** 
+font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+*/
+/* Define the base styles */
+body {
+    text-align: center;
+    margin: 0 auto;
+    /* width:720px */
+    background-color: lightgrey;
+}
+
+.visually-hidden {
+    /*For screen readers*/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    color: transparent;
+}
+
+#activity img {
+    width: 100px;
+    border-radius: 45%;
+}
+
+.center-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.sub-activities {
+    width: 230px;
+    color: #1D3557;
+}
+
+
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px #A8DADC;
+    line-height: 1.1;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px #A8DADC;
+}
+
+
+
+#hero {
+    background: url(images/torshov-image.png) lightgray 0px / 102% 100% no-repeat;
+    height: 45vh;
+
+
+}
+
+.hero-welcome {
+
+    background: #1D3557;
+    width: fit-content;
+    color: #ffffff;
+    margin: 90px 0 0 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 0px 0px 1px black;
+    padding: 3px 18px 3px 18px;
+    border-radius: 10px;
+
+
+
+
+}
+
+.hero-text {
+    background: #457B9D;
+    margin: 11px 0 0 0;
+    width: 300px;
+    padding: 5px 18px 5px 18px;
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px black;
+    padding: 3px 18px 3px 18px;
+    border-radius: 10px;
+
+}
+
+#activity {
+    padding: 40px 0 0 0;
+    background-color: #F1FAEE;
+    height: 360px;
+}
+
+#activity h3 {
+    margin: 0 auto;
+    color: #1D3557;
+    padding: 0 0 50px 0;
+    width: 440px;
+    height: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 0px 0px 2px #ffffff;
+
+}
+
+
+#activity-showcase {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#guide {
+    height: 350px;
+    background-color: #FFF;
+    padding-top: 50px;
+}
+
+.guide-card {
+    background: #A8DADC;
+    max-width: 450px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 0 0px #1D3557;
+}
+
+
+.info {
+    padding: 0 10px 0 10px;
+    width: 180px;
+    height: 250px;
+    object-fit: contain;
+    /* Ensure the image fits while preserving aspect ratio */
+    border-radius: 10%;
+}
+
+.info h2 h3 p {
+    color: #1D3557;
+}
+
+.info p {
+    font-style: italic;
+    text-shadow: 0px 0px 1px #5e5e5e;
+}
+
+.info h2 {
+    font-size: 28px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px #5e5e5e;
+}
+
+.info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px #5e5e5e;
+
+}
+
+/* CONTINUE WORKIONG FROM HERE !!!!!!!!!!!!!!!!!!!!!! RESPONSIVE LOOOOOOOk*/
+
+/* ... Other styles remain unchanged ... */
+/* Apply responsive styles using media queries */
+@media only screen and (min-width: 700px) {
+    .guide-card {
+        min-height: 300px;
+    }
+}
+
+/* Apply responsive styles using media queries */
+@media only screen and (max-width: 700px) {
+
+    /* Adjust styles for screens up to 700px in width */
+    #hero {
+        height: 30vh;
+        /* Adjust the height for smaller screens */
+    }
+
+    .hero-welcome {
+        width: fit-content;
+        /* Adjust the width for smaller screens */
+
+    }
+
+    .one {
+        height: 10vh;
+
+    }
+
+    .two {
+        padding-top: 30px;
+        height: 10vh;
+
+    }
+
+    #activity {
+        height: 340px;
+        /* Decrease the height for smaller screens */
+    }
+
+    #activity h3 {
+        width: 80%;
+        /* Adjust the width for smaller screens */
+        font-size: 20px;
+        /* Decrease font size for better fit */
+        padding: 0 0 30px;
+        /* Decrease bottom padding for better spacing */
+    }
+
+    #guide {
+        height: 300px;
+        /* Decrease the height for smaller screens */
+    }
+
+    .guide-card {
+        max-width: 350px;
+        min-height: 260px;
+        /* Decrease the max-width for smaller screens */
+    }
+
+    .info {
+        width: 150px;
+        /* Decrease the width for better fit */
+
+    }
+
+    .info h2 {
+        font-size: 24px;
+        /* Decrease font size for better fit */
+    }
+
+    .info h3 {
+        font-size: 16px;
+        /* Decrease font size for better fit */
+    }
+}
+
+/* Add more media queries for other screen sizes if needed */
