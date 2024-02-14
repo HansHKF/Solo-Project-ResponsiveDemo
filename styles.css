@@ -15,7 +15,7 @@ font-family: 'Oswald', sans-serif;
 body {
     text-align: center;
     margin: 0 auto;
-    /* width:720px */
+    /* max-width: 720px;  try it*/
     background-color: lightgrey;
 }
 
@@ -31,17 +31,15 @@ body {
 
 #activity img {
     width: 100px;
-    border-radius: 45%;
+    border-radius: 40%;
 }
 
 .center-element {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
-
-
-
 
 .sub-activities {
     width: 230px;
@@ -65,14 +63,15 @@ p {
     text-shadow: 0px 0px 1px #A8DADC;
 }
 
-
-
 #hero {
-    background: url(images/torshov-image.png) lightgray 0px / 102% 100% no-repeat;
-    height: 45vh;
-
+    background: lightgray url(images/torshov-image.png) center/100% 100% no-repeat;
+    min-height: 360px;
+    /*Padding-bottom lets the image "container" scale freely with resolution changes. */
+    padding-bottom: 5%;
 
 }
+
+
 
 .hero-welcome {
 
@@ -86,8 +85,6 @@ p {
     text-shadow: 0px 0px 1px black;
     padding: 3px 18px 3px 18px;
     border-radius: 10px;
-
-
 
 
 }
@@ -104,6 +101,7 @@ p {
     text-shadow: 0px 0px 1px black;
     padding: 3px 18px 3px 18px;
     border-radius: 10px;
+
 
 }
 
@@ -134,7 +132,7 @@ p {
 }
 
 #guide {
-    height: 350px;
+
     background-color: #FFF;
     padding-top: 50px;
 }
@@ -183,8 +181,6 @@ p {
 
 }
 
-/* CONTINUE WORKIONG FROM HERE !!!!!!!!!!!!!!!!!!!!!! RESPONSIVE LOOOOOOOk*/
-
 /* ... Other styles remain unchanged ... */
 /* Apply responsive styles using media queries */
 @media only screen and (min-width: 700px) {
@@ -196,31 +192,11 @@ p {
 /* Apply responsive styles using media queries */
 @media only screen and (max-width: 700px) {
 
-    /* Adjust styles for screens up to 700px in width */
-    #hero {
-        height: 30vh;
-        /* Adjust the height for smaller screens */
-    }
-
-    .hero-welcome {
-        width: fit-content;
-        /* Adjust the width for smaller screens */
-
-    }
-
-    .one {
-        height: 10vh;
-
-    }
-
-    .two {
-        padding-top: 10px;
-        height: 10vh;
-
-    }
 
     #activity {
-        height: 340px;
+        min-height: 340px;
+        height: min-content;
+        padding-top: 10px;
         /* Decrease the height for smaller screens */
     }
 
